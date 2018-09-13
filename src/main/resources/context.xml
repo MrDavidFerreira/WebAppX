@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!--This is not needed for Mojarra 2.2.11+ and/or OmniFaces 2.4+.-->
+    <!--However, there may be other libraries which still expect to find-->
+    <!--Bean Manager in JNDI, so it's ok to keep this configuration file-->
+    <!--anyway for those libraries-->
+    <Resource name="BeanManager"
+              auth="Container"
+              type="javax.enterprise.inject.spi.BeanManager"
+              factory="org.jboss.weld.resources.ManagerObjectFactory" />
+</Context>
