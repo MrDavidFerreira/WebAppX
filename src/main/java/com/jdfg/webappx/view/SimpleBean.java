@@ -1,10 +1,20 @@
 package com.jdfg.webappx.view;
 
 import javax.faces.view.ViewScoped;
-import javax.faces.webapp.FacesServlet;
+import javax.inject.Named;
 import java.io.Serializable;
 
+@Named
 @ViewScoped
 public class SimpleBean implements Serializable {
-    javax.faces.webapp.FacesServlet facesServlet = new FacesServlet();
+
+    private String byteTexto;
+
+    public String getByteTexto() {
+        return byteTexto;
+    }
+
+    public void setByteTexto(String byteTexto) {
+        this.byteTexto = byteTexto;
+    }
 }
